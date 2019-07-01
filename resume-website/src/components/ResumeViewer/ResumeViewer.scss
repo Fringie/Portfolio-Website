@@ -1,0 +1,24 @@
+.resumeViewer {
+    display: inline;
+    
+    
+}
+
+.modal2 {
+    max-width: 80vh;
+    max-height: 80vh;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.ms-Dialog-main {
+    overflow: hidden;
+    .ms-Modal-scrollableContent{
+        overflow: hidden;
+        iframe {
+            height: 480px;
+            min-height: 80vh;
+            min-width: 80vw;
+        }
+    }
+}

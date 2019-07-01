@@ -1,0 +1,121 @@
+@import "../../global.module";
+
+.hero {
+  position: relative;
+  background: #4183c4;
+  background: url(hero-banner-min.jpg) no-repeat
+    center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 110px;
+  min-height: 500px;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 150px;
+
+  @media only screen and (max-width: $mobile-width) {
+    min-height: auto;
+    height: 420px;
+    max-height: 60vh;
+    margin-bottom: 75px
+  }
+  
+  .floatRight{
+    float: right;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 1.3;
+    font-family: "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-weight: 600;
+
+    @media only screen and (max-width: $mobile-width) {
+      font-size: 30px;
+    }
+    span {
+      font-size: 25px;
+      color: #e8f380;
+      border-bottom: 2px solid #e8f380;
+      padding-bottom: 12px;
+      line-height: 3;
+      font-weight: 500;
+    }
+  }
+  .hero-photo-container {
+    position: absolute;
+    bottom: -7.5rem;
+    left: 0;
+    right: 0;
+    @media only screen and (max-width: $mobile-width) {
+      bottom: -5.25rem
+    }
+
+    img {
+      border-radius: 100%;
+      height: 14rem;
+      width: 14rem;
+      border: solid #edeff5 7.5px;
+      background: #edeff5;
+      @media only screen and (max-width: $mobile-width) {
+        height: 9rem;
+        width: 9rem;
+      }
+    }
+  }
+  
+}
+
+.hero .row {
+  bottom: 0;
+    position: absolute;
+    padding-left: 0;
+    //width: 100%;
+    max-width: auto;
+    left: 0;
+    right: 0;
+
+    div.icons {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      @media only screen and (max-width: $mobile-width) {
+        right: 0;
+      }
+      @media only screen and (max-width: 720px) {
+        right: auto;
+        left: 0vw;
+        max-width: 50px;
+      }
+      .social-container {
+        margin: 5px;
+        margin-bottom: 0;
+      
+        .social-svg {
+          border-radius: 0!important;
+          background: white!important;
+          /*&:hover,
+          &:focus {
+            color: #004578;
+            -webkit-transform: scale(1.01);
+            -moz-transform: scale(1.01);
+            -o-transform: scale(1.01);
+            transform: scale(1.01);
+            -webkit-transition-duration: 0.5s;
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+          }*/
+        }
+      }
+      a.social-icon {
+        float: right;
+    }
+    }
+    
+}
+

@@ -1,0 +1,107 @@
+@import '_global.module';
+$body-bg: #000; //override bootstrap variables
+
+body {
+    /*font-size: 15px;*/
+    font-family: $font-family-main;
+    min-width: $min-width;
+    color: $font-colour;
+    background: $theme-light-grey;
+    min-height: 100vh;
+    @include font-smoothing;
+
+    
+    section {
+        width: 100%;
+    }
+    
+    .display-none {
+        display: none;
+    }
+
+    a {
+        text-decoration: none;
+      }
+      
+      h1 {
+        font-size: 30px;
+        line-height: 1.8;
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+      }
+      
+      p {
+        margin-bottom: 20px;
+        font-size: 17px;
+        line-height: 2;
+        text-align: justify;
+      }
+      
+      /*.content {
+        padding: 50px 2% 250px;
+        
+      }*/
+
+      // update layout or rename if i decide to use bootstrap
+      .row {
+        width: 100%;
+        max-width: 1170px;
+        margin: 0 auto;
+        position: relative;
+        @media only screen and (max-width: $mobile-width) {
+          width: 80%;
+        }
+
+        @media only screen and (max-width: 1400px) {
+          width: 80%;
+        }
+      } 
+}
+
+// scroll animation
+@-webkit-keyframes scroll {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    100% {
+      opacity: 0;
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+  }
+  @keyframes scroll {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    100% {
+      opacity: 0;
+      -webkit-transform: translateY(20px);
+      -ms-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+}
+/*
+::-webkit-scrollbar {
+    width: 17px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #8f8f8f; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666666; 
+}*/
+
+.row.content:last-child {
+  margin-bottom: 100px;
+}
